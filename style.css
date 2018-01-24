@@ -3,19 +3,14 @@ h1 {
     color: #0d3b66;
     text-align: center;
 }
-
-.instafeed {
-    width: 80%;
+#main{
+    width: 100%;
+    max-width: 970px;
     margin: 0 auto;
 }
-#instafeed img{
-    max-width: 320px;
-    max-height: 320px;
-}
 
-.single-image {
-    height: 320px;
-    width: 320px;
+.single-image img{
+    width: calc(33% - 20px);
     margin: 10px;
     float: left;
 }
@@ -30,7 +25,22 @@ h1 {
     color: #fff;
     border-radius: 5px;
     padding: 10px 15px;
-    
+
+}
+#load-more:disabled{
+    background-color: #ccc;
+    color:#0d3b66;
+}
+@media screen and (max-width: 768px) {
+
+    .single-image img{
+        width: calc(100% - 20px)
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 970px) {
+    .single-image img{
+        width: calc(50% - 20px)
+    }
 }
 /********************
     FOOTER 
@@ -42,7 +52,7 @@ footer{
 footer .copyright{
     padding:5px 0 5px;
     font-size:1.1em;
-    
+
 }
 
 footer .copyright a{
