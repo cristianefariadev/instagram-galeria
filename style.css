@@ -1,12 +1,13 @@
 /* GERAL */
-h1 {
-    color: #0d3b66;
+header {
+    color: #000;
     text-align: center;
 }
-#main{
+
+main{
     width: 100%;
-    max-width: 970px;
-    margin: 0 auto;
+    max-width: 1200px;
+    margin: 40px auto;
 }
 
 .single-image img{
@@ -15,21 +16,25 @@ h1 {
     float: left;
 }
 
-.btn{
+.load-more{
     width: 100%;
     float: left;
     text-align: center;
 }
-#load-more{
-    background-color: #0d3b66;
+.btn{
+    padding: 16px 32px;
+    margin: 32px 0;
+    font-size: 1.25em;
+    background-color: #000;
     color: #fff;
-    border-radius: 5px;
-    padding: 10px 15px;
-
 }
-#load-more:disabled{
+.btn:hover,
+.btn:focus{
+    background-color: #db0624;
+}
+
+.btn:disabled{
     background-color: #ccc;
-    color:#0d3b66;
 }
 @media screen and (max-width: 768px) {
 
@@ -49,14 +54,15 @@ footer{
     float: left;
     width: 100%;
 }
+
 footer .copyright{
     padding:5px 0 5px;
     font-size:1.1em;
-
+    text-align: center;
 }
-
 footer .copyright a{
-    color:#0d3b66;
+    color:#db0624;
     text-decoration: none;
 }
-
+footer .copyright p{margin-top: 16px;}
+footer .copyright img{width: 1em;}
